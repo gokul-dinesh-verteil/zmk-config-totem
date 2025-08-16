@@ -24,7 +24,7 @@
 #define TVP2 5
 
 &mt {
-    quick-tap-ms = <150>;
+    quick-tap-ms = <160>;
     global-quick-tap;
     flavor = "balanced";
     tapping-term-ms = <170>;
@@ -72,6 +72,11 @@
         macos-toggle {
             bindings = <&to 1>;
             key-positions = <16 17 18 19>;
+        };
+
+        media_nav {
+            bindings = <&to 6>;
+            key-positions = <20 31>;
         };
     };
 
@@ -225,6 +230,17 @@
 &none  &none  &none           &none           &none            &none        &none           &none           &none         &none            &none  &none
                               &none           &mkp MB4         &mkp RCLK    &mkp LCLK       &mkp MCLK       &none
             >;
+        };
+
+        media_layer {
+            bindings = <
+       &none  &none  &none  &none  &none    &none           &none     &none         &none      &none
+       &none  &none  &none  &none  &none    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none
+&none  &none  &none  &none  &none  &none    &none           &none     &none         &none      &none  &none
+                     &none  &none  &none    &kp C_PP        &none     &none
+            >;
+
+            label = "MED";
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
