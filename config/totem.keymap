@@ -97,6 +97,98 @@
         };
     };
 
+    behaviors {
+        q1: q1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Q1";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&kp NUMBER_1>;
+
+            tapping-term-ms = <170>;
+        };
+
+        w2: w2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "W2";
+            #binding-cells = <0>;
+            bindings = <&kp W>, <&kp NUMBER_2>;
+
+            tapping-term-ms = <170>;
+        };
+
+        e3: e3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "E3";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&kp NUMBER_3>;
+
+            tapping-term-ms = <170>;
+        };
+
+        r4: r4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "R4";
+            #binding-cells = <0>;
+            bindings = <&kp R>, <&kp NUMBER_4>;
+
+            tapping-term-ms = <170>;
+        };
+
+        t5: t5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "T5";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp N5>;
+
+            tapping-term-ms = <170>;
+        };
+
+        y6: y6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Y6";
+            #binding-cells = <0>;
+            bindings = <&kp Y>, <&kp NUMBER_6>;
+
+            tapping-term-ms = <170>;
+        };
+
+        u7: u7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "U7";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp N7>;
+
+            tapping-term-ms = <170>;
+        };
+
+        i8: i8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "I8";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp N8>;
+
+            tapping-term-ms = <170>;
+        };
+
+        o9: o9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "O9";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp N9>;
+
+            tapping-term-ms = <170>;
+        };
+
+        p0: p0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "P0";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp N0>;
+
+            tapping-term-ms = <170>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -119,7 +211,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q           &kp W           &kp E        &kp R         &kp T        &kp Y    &kp U            &kp I        &kp O           &kp P
+            &q1             &w2             &e3          &r4           &t5          &y6      &u7              &i8          &o9             &p0
             &mt LEFT_ALT A  &mt LEFT_GUI S  &mt LCTRL D  &mt LSHFT F   &kp G        &kp H    &mt RSHFT J      &mt RCTRL K  &mt LEFT_GUI L  &mt LEFT_ALT SEMICOLON
 &kp DELETE  &kp Z           &kp X           &kp C        &kp V         &kp B        &kp N    &kp M            &kp COMMA    &kp DOT         &kp FSLH                &kp SINGLE_QUOTE
                                             &kp TAB      &lt 2 ESCAPE  &kp SPACE    &kp RET  &lt 3 BACKSPACE  &kp LS(RET)
@@ -129,7 +221,7 @@
         macos_base_layer {
             label = "MBASE";
             bindings = <
-            &kp Q           &kp W           &kp E        &kp R         &kp T        &kp Y    &kp U            &kp I           &kp O           &kp P
+            &q1             &w2             &e3          &r4           &t5          &y6      &u7              &i8             &o9             &p0
             &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F   &kp G        &kp H    &mt RSHFT J      &mt RCTRL K     &mt LEFT_ALT L  &mt LEFT_WIN SEMICOLON
 &kp DELETE  &kp Z           &kp X           &kp C        &kp V         &kp B        &kp N    &kp M            &kp COMMA       &kp DOT         &kp FSLH                &kp SINGLE_QUOTE
                                             &kp TAB      &lt 2 ESCAPE  &kp SPACE    &kp RET  &lt 3 BACKSPACE  &kp LS(RETURN)
@@ -153,10 +245,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6    &kp N7          &kp N8        &kp N9     &kp N0
-        &trans        &trans        &trans        &trans        &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans        &trans        &trans        &trans        &trans    &trans          &trans          &trans        &trans     &trans  &trans
-                                    &trans        &trans        &trans    &trans          &mo 4           &trans
+        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6    &kp N7           &kp N8        &kp N9     &kp N0
+        &trans        &trans        &trans        &trans        &trans    &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans        &trans        &trans        &trans        &trans    &trans          &trans           &trans        &trans     &trans  &trans
+                                    &trans        &trans        &trans    &trans          &lt 4 BACKSPACE  &trans
             >;
         };
 
@@ -177,10 +269,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp EXCL  &kp AT  &kp HASH  &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR              &kp LEFT_BRACKET       &kp RIGHT_BRACKET
-           &trans    &trans  &trans    &kp LC(SPACE)  &trans       &kp MINUS  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp TILDE  &trans    &trans  &trans    &trans         &trans       &kp UNDER  &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE           &kp GRAVE
-                             &trans    &mo 4          &trans       &trans     &trans     &trans
+           &kp EXCL  &kp AT  &kp HASH  &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR              &kp LEFT_BRACKET       &kp RIGHT_BRACKET
+           &trans    &trans  &trans    &kp LC(SPACE)    &trans       &kp MINUS  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&kp TILDE  &trans    &trans  &trans    &trans           &trans       &kp UNDER  &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE           &kp GRAVE
+                             &trans    &lt 4 BACKSPACE  &trans       &trans     &trans     &trans
             >;
         };
 
