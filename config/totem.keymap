@@ -24,7 +24,7 @@
 #define TVP2 5
 
 &mt {
-    quick-tap-ms = <160>;
+    quick-tap-ms = <165>;
     global-quick-tap;
     flavor = "balanced";
     tapping-term-ms = <170>;
@@ -119,20 +119,20 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q           &kp W           &kp E        &kp R        &kp T        &kp Y    &kp U            &kp I        &kp O           &kp P
-            &mt LEFT_ALT A  &mt LEFT_GUI S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J      &mt RCTRL K  &mt LEFT_GUI L  &mt LEFT_ALT SEMICOLON
-&kp ESCAPE  &kp Z           &kp X           &kp C        &kp V        &kp B        &kp N    &kp M            &kp COMMA    &kp DOT         &kp FSLH                &kp SINGLE_QUOTE
-                                            &kp DELETE   &lt 2 TAB    &kp SPACE    &kp RET  &lt 3 BACKSPACE  &kp BSPC
+            &kp Q           &kp W           &kp E        &kp R         &kp T        &kp Y    &kp U            &kp I        &kp O           &kp P
+            &mt LEFT_ALT A  &mt LEFT_GUI S  &mt LCTRL D  &mt LSHFT F   &kp G        &kp H    &mt RSHFT J      &mt RCTRL K  &mt LEFT_GUI L  &mt LEFT_ALT SEMICOLON
+&kp DELETE  &kp Z           &kp X           &kp C        &kp V         &kp B        &kp N    &kp M            &kp COMMA    &kp DOT         &kp FSLH                &kp SINGLE_QUOTE
+                                            &kp TAB      &lt 2 ESCAPE  &kp SPACE    &kp RET  &lt 3 BACKSPACE  &kp LS(RET)
             >;
         };
 
         macos_base_layer {
             label = "MBASE";
             bindings = <
-            &kp Q           &kp W           &kp E        &kp R        &kp T        &kp Y    &kp U            &kp I        &kp O           &kp P
-            &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J      &mt RCTRL K  &mt LEFT_ALT L  &mt LEFT_WIN SEMICOLON
-&kp ESCAPE  &kp Z           &kp X           &kp C        &kp V        &kp B        &kp N    &kp M            &kp COMMA    &kp DOT         &kp FSLH                &kp SINGLE_QUOTE
-                                            &kp DELETE   &lt 2 TAB    &kp SPACE    &kp RET  &lt 3 BACKSPACE  &kp BSPC
+            &kp Q           &kp W           &kp E        &kp R         &kp T        &kp Y    &kp U            &kp I           &kp O           &kp P
+            &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F   &kp G        &kp H    &mt RSHFT J      &mt RCTRL K     &mt LEFT_ALT L  &mt LEFT_WIN SEMICOLON
+&kp DELETE  &kp Z           &kp X           &kp C        &kp V         &kp B        &kp N    &kp M            &kp COMMA       &kp DOT         &kp FSLH                &kp SINGLE_QUOTE
+                                            &kp TAB      &lt 2 ESCAPE  &kp SPACE    &kp RET  &lt 3 BACKSPACE  &kp LS(RETURN)
             >;
         };
 
