@@ -113,7 +113,7 @@
             #binding-cells = <0>;
             bindings = <&kp W>, <&kp NUMBER_2>;
 
-            tapping-term-ms = <195>;
+            tapping-term-ms = <190>;
         };
 
         e3: e3 {
@@ -131,7 +131,7 @@
             #binding-cells = <0>;
             bindings = <&kp R>, <&kp NUMBER_4>;
 
-            tapping-term-ms = <185>;
+            tapping-term-ms = <190>;
         };
 
         t5: t5 {
