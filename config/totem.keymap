@@ -30,6 +30,14 @@
     tapping-term-ms = <170>;
 };
 
+&lt {
+    quick-tap-ms = <160>;
+    tapping-term-ms = <170>;
+    bindings = <&mo>, <&kp>;
+
+    flavor = "balanced";
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -39,12 +47,12 @@
             key-positions = <34 35>;
         };
 
-        bt-prev {
+        bt-linux {
             bindings = <&bt BT_SEL 0>;
             key-positions = <0 1 3 2>;
         };
 
-        bt-next {
+        bt-macos {
             bindings = <&bt BT_SEL 1>;
             key-positions = <6 7 8 9>;
         };
