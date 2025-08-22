@@ -35,7 +35,7 @@
     tapping-term-ms = <170>;
     bindings = <&mo>, <&kp>;
 
-    flavor = "tap-unless-interrupted";
+    flavor = "hold-preferred";
 };
 
 / {
