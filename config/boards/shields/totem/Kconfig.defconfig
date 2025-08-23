@@ -1,7 +1,7 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_TOTEM_DONGLE
+if SHIELD_TOTEM_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "TOTEM"
@@ -9,12 +9,28 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+endif
+
+if SHIELD_TOTEM_LEFT || SHIELD_TOTEM_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
+
+if SHIELD_TOTEM_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "TOTEM DONGLE"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
 config ZMK_SPLIT
     default y
 
 config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-    # update this when building trackball
-    default 2
+    default 2 
 
 config BT_MAX_CONN
     default 6
@@ -24,11 +40,5 @@ config BT_MAX_PAIRED
 
 endif
 
-if SHIELD_TOTEM_LEFT || SHIELD_TOTEM_RIGHT
-
-config ZMK_SPLIT
-    default y
-
-# board specific configuraitons
-
-endif
+CONFIG_ZMK_STUDIO=y
+CONFIG_ZMK_SETTINGS_SHELL=y
