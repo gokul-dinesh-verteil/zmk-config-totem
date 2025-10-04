@@ -26,9 +26,8 @@
 &mt {
     quick-tap-ms = <160>;
     global-quick-tap;
-    flavor = "tap-unless-interrupted";
-    tapping-term-ms = <165>;
-    retro-tap;
+    flavor = "balanced";
+    tapping-term-ms = <160>;
 };
 
 &lt {
@@ -46,7 +45,7 @@
         capslock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <34 35>;
-            timeout-ms = <100>;
+            timeout-ms = <110>;
         };
 
         bt-prev {
