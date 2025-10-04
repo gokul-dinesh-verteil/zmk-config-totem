@@ -27,7 +27,7 @@
     quick-tap-ms = <160>;
     global-quick-tap;
     flavor = "tap-unless-interrupted";
-    tapping-term-ms = <162>;
+    tapping-term-ms = <170>;
 };
 
 &lt {
