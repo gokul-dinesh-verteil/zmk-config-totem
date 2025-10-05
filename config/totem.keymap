@@ -78,9 +78,14 @@
             key-positions = <16 17 18 19>;
         };
 
-        bootloader {
+        bootloader-L {
             bindings = <&bootloader>;
-            key-positions = <20 31>;
+            key-positions = <32 33 34>;
+        };
+
+        bootloader-R {
+            bindings = <&bootloader>;
+            key-positions = <35 36 37>;
         };
     };
 
@@ -108,7 +113,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <148>;
+            tapping-term-ms = <146>;
             quick-tap-ms = <160>;
             flavor = "hold-preferred";
         };
