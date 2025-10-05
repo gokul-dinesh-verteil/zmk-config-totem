@@ -77,16 +77,6 @@
             bindings = <&to 1>;
             key-positions = <16 17 18 19>;
         };
-
-        bootloader-L {
-            bindings = <&bootloader>;
-            key-positions = <32 33 34>;
-        };
-
-        bootloader-R {
-            bindings = <&bootloader>;
-            key-positions = <35 36 37>;
-        };
     };
 
     macros {
