@@ -32,7 +32,7 @@
 
 &lt {
     quick-tap-ms = <160>;
-    tapping-term-ms = <165>;
+    tapping-term-ms = <160>;
     bindings = <&mo>, <&kp>;
 
     flavor = "hold-preferred";
